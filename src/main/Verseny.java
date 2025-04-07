@@ -58,7 +58,7 @@ public class Verseny {
         ellenorzes();
     }
 
-    private void ellenorzes() {
+    public void ellenorzes() {
         if (nyertes.equalsIgnoreCase(fogadottSzin)) {
             System.out.println("Gratulálok! Nyertél a fogadásoddal!");
         } else {
