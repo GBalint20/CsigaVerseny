@@ -38,6 +38,7 @@ public class Csiga {
 
     public void gyorsul() {
         int gyorsasag = (int) (Math.random() * 6);
+        megy += gyorsasag;
         for (int i = 0; i < gyorsasag; i++) {
             utvonal += "=";
         }
@@ -81,6 +82,7 @@ public class Csiga {
     public void haladas() {
         int lepes = 0;
         lepes = RND.nextInt(0, 4);
+        megy += lepes;
         for (int i = 0; i < lepes; i++) {
             utvonal += "-";
         }
