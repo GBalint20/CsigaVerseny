@@ -37,7 +37,8 @@ public class Csiga {
     }
 
     public void gyorsul() {
-        int gyorsasag = (int) (Math.random() * 6);
+        int gyorsasag = 0;
+        gyorsasag = RND.nextInt(1, 7);
         megy += gyorsasag;
         for (int i = 0; i < gyorsasag; i++) {
             utvonal += "=";
@@ -71,13 +72,9 @@ public class Csiga {
                 break;
         }
 
-        return szinKodo + utvonal + Alap + " " + emoji;
+        return szinKodo + utvonal + " " + emoji;
     }
 
-    public void csigaemoji() {
-        System.out.print(utvonal);
-        System.out.print(" " + emoji);
-    }
 
     public void haladas() {
         int lepes = 0;
